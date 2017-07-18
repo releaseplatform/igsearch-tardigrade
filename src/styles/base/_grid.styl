@@ -1,0 +1,36 @@
+  .g-half
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    float:left;
+
+  .g-third
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+
+  .g-2third
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+
+@media screen and (min-width: $bp-lg)
+  .g-half
+    width: 48%;
+    margin-right: 2%;
+    &:last-child
+      margin-right: 0;
+
+  .g-third
+    width: 31%;
+    margin-right: 2%;
+    &:last-child
+      margin-right: 0;
+
+  .g-2third
+    width: 64%;
+    margin-right: 2%;
+    &:last-child
+      margin-right: 0;

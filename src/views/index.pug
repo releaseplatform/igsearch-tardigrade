@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(
+      href='/dest/styles/style.css'
+      rel='stylesheet'
+      type='text/css'
+    )
+    meta(
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      )  
+  body
+    include components/header.pug
+    div(class="container")
+      div(class="g-2third brdr p-h-lg p-v-lg p-v-lg-on-md p-h-lg-on-md")
+        h1(class="fw-b t-md") Brand ambassadors, at your fingertips
+        p(class="t-sm") Find the followers and influencers who drive engagement with your brand
+        a(href="#", class="btn btn-primary") Sign up
+      div(class="g-third p-t-lg p-t-no-on-lg")
+        div(class="m-b-lg")
+          span(class="fw-b t-sm dis-b") Search Instagram
+          span(class="fw-l t-xs") For posts by hashtag and location
+        div(class="m-b-lg")
+          span(class="fw-b t-sm dis-b") Engage New Ambassadors
+          span(class="fw-l t-xs") Comment, like, follow and email relevant users
+        div(class="m-b-lg")
+          span(class="fw-b t-sm dis-b") Filter Your Results
+          span(class="fw-l t-xs") By number of likes, followers and like : follower ratio
+    script(
+      src='/dest/scripts/main.js'   
+    )
+    
